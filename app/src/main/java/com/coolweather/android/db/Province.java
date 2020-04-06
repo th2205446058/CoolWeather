@@ -2,6 +2,7 @@ package com.coolweather.android.db;
 
 import org.litepal.crud.DataSupport;
 
+
 public class Province extends DataSupport {
     private int id;
     private String provinceName;
@@ -29,5 +30,14 @@ public class Province extends DataSupport {
 
     public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
+    }
+
+    @Override
+    public String toString() {
+        return "Province{" +
+                "id=" + id +
+                ", provinceName='" + provinceName + '\'' +
+                ", provinceCode=" + provinceCode +
+                '}';
     }
 }
